@@ -153,9 +153,9 @@ main_left:
     title: technology
     url: 'https://www.datadoghq.com/solutions/kubernetes/'
     weight: -449
-  - name: 'Red Hat OpenShift'
-    parent: 'solutions'
-    title: 'technology'
+  - name: Red Hat OpenShift
+    parent: solutions
+    title: technology
     url: 'https://www.datadoghq.com/solutions/openshift/'
     weight: -448
   - name: Cloud Migration
@@ -2250,6 +2250,18 @@ api_v1:
   - name: List namespace rules
     parent: AWS Integration
     url: '#list-namespace-rules'
+    generated: true
+  - name: Delete a tag filtering entry
+    parent: AWS Integration
+    url: '#delete-a-tag-filtering-entry'
+    generated: true
+  - name: Get all AWS tag filters
+    parent: AWS Integration
+    url: '#get-all-aws-tag-filters'
+    generated: true
+  - name: Set an AWS tag filter
+    parent: AWS Integration
+    url: '#set-an-aws-tag-filter'
     generated: true
   - name: Generate a new external ID
     parent: AWS Integration
