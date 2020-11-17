@@ -153,9 +153,9 @@ main_left:
     title: technology
     url: 'https://www.datadoghq.com/solutions/kubernetes/'
     weight: -449
-  - name: 'Red Hat OpenShift'
-    parent: 'solutions'
-    title: 'technology'
+  - name: Red Hat OpenShift
+    parent: solutions
+    title: technology
     url: 'https://www.datadoghq.com/solutions/openshift/'
     weight: -448
   - name: Cloud Migration
@@ -3384,6 +3384,14 @@ api_v2:
   - name: PagerDuty Integration
     url: /api/v2/pagerduty-integration/
     identifier: PagerDuty Integration
+    generated: true
+  - name: Processes
+    url: /api/v2/processes/
+    identifier: Processes
+    generated: true
+  - name: Get all processes
+    parent: Processes
+    url: '#get-all-processes'
     generated: true
   - name: Roles
     url: /api/v2/roles/
