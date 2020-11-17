@@ -5885,7 +5885,7 @@ components:
           type: array
         type:
           default: gauge
-          description: The type of the metric.
+          description: The type of the metric either `count`, `gauge`, or `rate`.
           example: rate
           type: string
       required:
@@ -17953,12 +17953,11 @@ paths:
       operationId: DisableUser
       parameters:
       - description: The handle of the user.
+        example: test@datadoghq.com
         in: path
         name: user_handle
         required: true
         schema:
-          example: test@datadoghq.com
-          format: email
           type: string
       responses:
         '200':
@@ -17993,12 +17992,11 @@ paths:
       operationId: GetUser
       parameters:
       - description: The ID of the user.
+        example: test@datadoghq.com
         in: path
         name: user_handle
         required: true
         schema:
-          example: test@datadoghq.com
-          format: email
           type: string
       responses:
         '200':
@@ -18030,12 +18028,11 @@ paths:
       operationId: UpdateUser
       parameters:
       - description: The ID of the user.
+        example: test@datadoghq.com
         in: path
         name: user_handle
         required: true
         schema:
-          example: test@datadoghq.com
-          format: email
           type: string
       requestBody:
         content:
